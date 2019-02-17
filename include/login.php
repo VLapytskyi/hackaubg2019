@@ -30,7 +30,7 @@ function display_login_page () {
 body {
     font-family: Arial, Helvetica, sans-serif;
 	margin-left: 0;
-	background-color: #d19f1f;
+	background-color: #ccc;
     }
 
 input[type=text], input[type=password] {
@@ -133,7 +133,7 @@ span.psw {
   animation: animatezoom 0.6s
 }
 .buttons{
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .buttons button{
   background-color:#212121;
@@ -177,6 +177,8 @@ footer{
 </head>
 <body>
   <div class="buttons" align="center">
+  <img src="resources/logo.png" alt="Logo" class="logo">
+<br>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
 </div>
@@ -184,7 +186,7 @@ footer{
   <form method="post" class="modal-content animate" action="handlers/login.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="resources/logo.svg" alt="Logo" class="logo">
+      <img src="resources/logo.png" alt="Logo" class="logo">
     </div>
 
     <div class="container">
@@ -210,7 +212,7 @@ footer{
   <form method="post" class="modal-content animate" action="handlers/register.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="resources/logo.svg" alt="Logo" class="logo">
+      <img src="resources/logo.png" alt="Logo" class="logo">
     </div>
 
     <div class="container">
