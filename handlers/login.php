@@ -7,7 +7,7 @@ include_once('../include/init_session.php');
 
 init_session();
 
-if (empty($_POST['login_email']) || empty($_POST["login_password"]) || !is_string($_POST['login_email']) && !is_string($_POST["login_password"])) {
+if (empty($_POST['login_email']) || empty($_POST["login_password"]) || !is_string($_POST['login_email']) || !is_string($_POST["login_password"])) {
     goto_login_error("Login and/or password is not entered");
 }
 
